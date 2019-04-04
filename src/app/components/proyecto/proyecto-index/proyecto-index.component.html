@@ -1,0 +1,378 @@
+<div class="page-content">
+  <div class="content-wrapper">
+    <!-- Page header -->
+    <div class="page-header page-header-dark bg-dark">
+      <div class="page-header-content header-elements-md-inline">
+        <div class="page-title d-flex">
+          <h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Proyectos</span> - Listado</h4>
+          <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+
+        <div class="header-elements d-none">
+          <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-link btn-float text-white"><i
+                class="icon-bars-alt text-white"></i><span class="text-white">Estadísticas</span></a>
+            <a href="#" class="btn btn-link btn-float text-white"><i class="icon-calculator text-white"></i>
+              <span>Gastos</span></a>
+            <a href="#" class="btn btn-link btn-float text-white"><i class="icon-calendar5 text-white"></i>
+              <span>Calendario</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="breadcrumb-line breadcrumb-line-dark bg-dark header-elements-md-inline">
+        <div class="d-flex">
+          <div class="breadcrumb">
+            <a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
+            <a href="invoice_archive.html" class="breadcrumb-item">Proyectos</a>
+            <span class="breadcrumb-item active">Lista</span>
+          </div>
+
+          <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+
+        <div class="header-elements d-none">
+          <div class="breadcrumb justify-content-center">
+            <a href="#" class="breadcrumb-elements-item">
+              <i class="icon-comment-discussion mr-2"></i>
+              Support
+            </a>
+
+            <div class="breadcrumb-elements-item dropdown p-0">
+              <a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-gear mr-2"></i>
+                Settings
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+                <a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+                <a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page header -->
+
+
+    <!-- Content area -->
+    <div class="content">
+
+      <!-- Invoice archive -->
+      <div class="card">
+        <div class="card-header bg-transparent header-elements-inline">
+          <h6 class="card-title">Listado de Proyectos</h6>
+          <div class="header-elements">
+            <div class="list-icons">
+              <a class="list-icons-item" data-action="collapse"></a>
+              <a class="list-icons-item" data-action="reload"></a>
+              <a class="list-icons-item" data-action="remove"></a>
+            </div>
+          </div>
+        </div>
+
+        <table class="table table-lg invoice-archive">
+          <thead>
+            <tr>
+              <th>Nro</th>
+              <th>Cliente</th>
+              <th>Oculto</th>
+              <th>Proyecto</th>
+              <th>Estado</th>
+              <th>Inicio del Proyecto</th>
+              <th>Fin del Proyecto</th>
+              <th>Monto del Proyecto</th>
+              <th class="text-center">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Municipalidad de Yura</td>
+              <td>Carretera Yura - Tramo 5</td>
+              <td>
+                <h6 class="mb-0">
+                  <a href="#">Ejecución</a>
+                  <span class="d-block font-size-sm text-muted">Carretera Yura - Tramo 5</span>
+                </h6>
+              </td>
+              <td>
+                <span class="badge badge-warning">En ejecución</span>
+              </td>
+              <td>
+                Abril 18, 2019
+              </td>
+              <td>
+                Junio 18, 2019
+              </td>
+              <td>
+                <h6 class="mb-0 font-weight-bold">S/.1,545,000.00
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Gastos g. 9%</span>
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Utilidades 9%</span>
+                </h6>
+              </td>
+              <td class="text-center">
+                <div class="list-icons list-icons-extended">
+                  <a href="#" class="list-icons-item" data-toggle="modal" data-target="#invoice"><i
+                      class="icon-file-eye"></i></a>
+                  <a [routerLink]="['/proyecto/gastos']" class="list-icons-item"><i
+                      class="icon-coin-dollar"></i></a>    
+                  <div class="list-icons-item dropdown">
+                    <a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i
+                        class="icon-file-text2"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item"><i class="icon-file-download"></i> Download</a>
+                      <a href="#" class="dropdown-item"><i class="icon-printer"></i> Print</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item"><i class="icon-file-plus"></i> Edit</a>
+                      <a href="#" class="dropdown-item"><i class="icon-cross2"></i> Remove</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Municipalidad de Yura</td>
+              <td>Carretera Yura - Tramo 5</td>
+              <td>
+                <h6 class="mb-0">
+                  <a href="#">Expediente</a>
+                  <span class="d-block font-size-sm text-muted">Carretera Yura - Tramo 5</span>
+                </h6>
+              </td>
+              <td>
+                <span class="badge badge-success">Finalizado</span>
+              </td>
+              <td>
+                Abril 18, 2019
+              </td>
+              <td>
+                Junio 18, 2019
+              </td>
+              <td>
+                <h6 class="mb-0 font-weight-bold">S/.1,545,000.00
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Gastos g. 9%</span>
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Utilidades 9%</span>
+                </h6>
+              </td>
+              <td class="text-center">
+                <div class="list-icons list-icons-extended">
+                  <a href="#" class="list-icons-item" data-toggle="modal" data-target="#invoice"><i
+                      class="icon-file-eye"></i></a>
+                  <a [routerLink]="['/proyecto/gastos']" class="list-icons-item"><i
+                      class="icon-coin-dollar"></i></a>    
+                  <div class="list-icons-item dropdown">
+                    <a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i
+                        class="icon-file-text2"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item"><i class="icon-file-download"></i> Download</a>
+                      <a href="#" class="dropdown-item"><i class="icon-printer"></i> Print</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item"><i class="icon-file-plus"></i> Edit</a>
+                      <a href="#" class="dropdown-item"><i class="icon-cross2"></i> Remove</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td>Municipalidad de Yura</td>
+              <td>Carretera Yura - Tramo 5</td>
+              <td>
+                <h6 class="mb-0">
+                  <a href="#">Supervisión</a>
+                  <span class="d-block font-size-sm text-muted">Carretera Yura - Tramo 5</span>
+                </h6>
+              </td>
+              <td>
+                <span class="badge badge-warning">En ejecución</span>
+              </td>
+              <td>
+                Abril 18, 2019
+              </td>
+              <td>
+                Junio 18, 2019
+              </td>
+              <td>
+                <h6 class="mb-0 font-weight-bold">S/.1,545,000.00
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Gastos g. 9%</span>
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Utilidades 9%</span>
+                </h6>
+              </td>
+              <td class="text-center">
+                <div class="list-icons list-icons-extended">
+                  <a href="#" class="list-icons-item" data-toggle="modal" data-target="#invoice"><i
+                      class="icon-file-eye"></i></a>
+                  <a [routerLink]="['/proyecto/gastos']" class="list-icons-item"><i
+                      class="icon-coin-dollar"></i></a>    
+                  <div class="list-icons-item dropdown">
+                    <a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i
+                        class="icon-file-text2"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item"><i class="icon-file-download"></i> Download</a>
+                      <a href="#" class="dropdown-item"><i class="icon-printer"></i> Print</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item"><i class="icon-file-plus"></i> Edit</a>
+                      <a href="#" class="dropdown-item"><i class="icon-cross2"></i> Remove</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>001</td>
+              <td>Municipalidad de Paucarpata</td>
+              <td>Mejoramiento de Av. José Galvez</td>
+              <td>
+                <h6 class="mb-0">
+                  <a href="#">Ejecución</a>
+                  <span class="d-block font-size-sm text-muted">Mejoramiento de Av. José Galvez</span>
+                </h6>
+              </td>
+              <td>
+                <span class="badge badge-warning">En ejecución</span>
+              </td>
+              <td>
+                Abril 18, 2019
+              </td>
+              <td>
+                Junio 18, 2019
+              </td>
+              <td>
+                <h6 class="mb-0 font-weight-bold">S/.1,545,000.00
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Gastos g. 9%</span>
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Utilidades 9%</span>
+                </h6>
+              </td>
+              <td class="text-center">
+                <div class="list-icons list-icons-extended">
+                  <a href="#" class="list-icons-item" data-toggle="modal" data-target="#invoice"><i
+                      class="icon-file-eye"></i></a>
+                  <a [routerLink]="['/proyecto/gastos']" class="list-icons-item"><i
+                      class="icon-coin-dollar"></i></a>    
+                  <div class="list-icons-item dropdown">
+                    <a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i
+                        class="icon-file-text2"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item"><i class="icon-file-download"></i> Download</a>
+                      <a href="#" class="dropdown-item"><i class="icon-printer"></i> Print</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item"><i class="icon-file-plus"></i> Edit</a>
+                      <a href="#" class="dropdown-item"><i class="icon-cross2"></i> Remove</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Municipalidad de Paucarpata</td>
+              <td>Mejoramiento de Av. José Galvez</td>
+              <td>
+                <h6 class="mb-0">
+                  <a href="#">Expediente</a>
+                  <span class="d-block font-size-sm text-muted">Mejoramiento de Av. José Galvez</span>
+                </h6>
+              </td>
+              <td>
+                <span class="badge badge-danger">Con Retraso</span>
+              </td>
+              <td>
+                Abril 18, 2019
+              </td>
+              <td>
+                Junio 18, 2019
+              </td>
+              <td>
+                <h6 class="mb-0 font-weight-bold">S/.1,545,000.00
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Gastos g. 9%</span>
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Utilidades 9%</span>
+                </h6>
+              </td>
+              <td class="text-center">
+                <div class="list-icons list-icons-extended">
+                  <a href="#" class="list-icons-item" data-toggle="modal" data-target="#invoice"><i
+                      class="icon-file-eye"></i></a>
+                  <a [routerLink]="['/proyecto/gastos']" class="list-icons-item"><i
+                      class="icon-coin-dollar"></i></a>    
+                  <div class="list-icons-item dropdown">
+                    <a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i
+                        class="icon-file-text2"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item"><i class="icon-file-download"></i> Download</a>
+                      <a href="#" class="dropdown-item"><i class="icon-printer"></i> Print</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item"><i class="icon-file-plus"></i> Edit</a>
+                      <a href="#" class="dropdown-item"><i class="icon-cross2"></i> Remove</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td>Municipalidad de Paucarpata</td>
+              <td>Mejoramiento de Av. José Galvez</td>
+              <td>
+                <h6 class="mb-0">
+                  <a href="#">Supervisión</a>
+                  <span class="d-block font-size-sm text-muted">Mejoramiento de Av. José Galvez</span>
+                </h6>
+              </td>
+              <td>
+                <span class="badge badge-success">Finalizado</span>
+              </td>
+              <td>
+                Abril 18, 2019
+              </td>
+              <td>
+                Junio 18, 2019
+              </td>
+              <td>
+                <h6 class="mb-0 font-weight-bold">S/.1,545,000.00
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Gastos g. 9%</span>
+                  <span class="d-block font-size-sm text-muted font-weight-normal">Utilidades 9%</span>
+                </h6>
+              </td>
+              <td class="text-center">
+                <div class="list-icons list-icons-extended">
+                  <a href="#" class="list-icons-item" data-toggle="modal" data-target="#invoice"><i
+                      class="icon-file-eye"></i></a>
+                  <a [routerLink]="['/proyecto/gastos']" class="list-icons-item"><i
+                      class="icon-coin-dollar"></i></a>    
+                  <div class="list-icons-item dropdown">
+                    <a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i
+                        class="icon-file-text2"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item"><i class="icon-file-download"></i> Download</a>
+                      <a href="#" class="dropdown-item"><i class="icon-printer"></i> Print</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item"><i class="icon-file-plus"></i> Edit</a>
+                      <a href="#" class="dropdown-item"><i class="icon-cross2"></i> Remove</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- /invoice archive -->
+
+    </div>
+    <!-- /content area -->
+
+
+    <!-- Footer -->
+   
+    <!-- /footer -->
+
+  </div>
+</div>
+
